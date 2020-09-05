@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Circular';
+    src:  url('../fonts/circular.ttf');   
+  }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Circular', sans-serif;
+}
+
+
+
+/* Utilities */
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+
+
+
+/************************************** 
+                HEADER 
+***************************************/
+
+.main-header{
+    width: 100%;
+    height: 100vh;
+    background: cadetblue;
+}
+
+
+/******* NAVIGATION ********/
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.logo{
+    width: 130px;
+    fill: #ffffff;
+}
+
+.logo:hover{
+    fill: rgb(95, 202, 6);
+    cursor: pointer;
+}
+
+
+.navigation-content{
+    display: flex;
+    height: 100%;
+    align-items: center; 
+}
+
+.logo-box{
+    flex: 2;
+}
+
+.nav-box{
+    flex: 8;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-item{
+    padding: 20px;
+}
+
+.btn{
+    color: #ffffff;
+    font-weight: bolder;
+    height: 100%;
+    display: inline-block;
+}
+
+.btn:hover{
+    color: rgb(95, 202, 6);
+}
+
+.bar{
+    width: 10px;
+    height: 30px;
+    color: #ffffff;
+}
+
+
+
+
+/******* HERO ********/
+
+
+
+.hero-title-bit{
+    display: block;
+    padding-left: 150px;
+    font-weight: bold;
+}
+
+
+.hero{
+    position: relative;
+    top: 80px;
+    height: 92%;
+    width: 100%;
+    background: rgb(4, 71, 196);
+    
+}
+
+.hero-showcase{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-showcase::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.scdn.co/i/home/lieVariants/bursts-tablet.svg') no-repeat;
+    background-size: 185%;
+    background-position: left 70% bottom 15%;
+    z-index: 1;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    padding-top: 100px;
+    color: #1ED760;
+    z-index: 9;
+}
+
+.hero-title{
+    margin-bottom: 20px;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.hero p{
+    margin-bottom: 40px;
+}
+
+.hero-btn{
+    cursor: pointer;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(4, 71, 196);
+    background: #1ED760;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    z-index: 9;
+    transition: 0.3s ease-in-out;
+}
+.hero-btn:hover{
+    background: #ffffff;
+}
+
+
+
+/************************************** 
+                Footer 
+***************************************/
+
+.main-footer{
+    height: 450px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    font-weight: 300;
+    padding: 60px 10px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-top{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    flex: 1;
+}
+
+.footer-nav{
+    flex: 3;
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer-list{
+    height: 100%;
+
+}
+
+.footer-list-item{
+    padding-bottom: 20px ;
+}
+
+.footer-list-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+}
+
+.footer-link{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-link:hover{
+    color: #1ED760;
+
+}
+
+
+.footer-social{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.fab{
+    font-size: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(44, 44, 44);
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 0;
+}
+
+.footer-bottom-country{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.country-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-box a{
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.country-box a:hover{
+    color: #1ED760
+}
+
+.footer-bottom-links{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.bottom-menu{
+    display: flex;
+}
+
+.bottom-menu-item{
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.bottom-menu-item:hover{
+    cursor: pointer;
+    color: #1ED760;
+}
+
